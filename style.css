@@ -2,19 +2,23 @@ body {
   height: 100vh;
   font-family: "Roboto", sans-serif;
 }
+
 /* Helper Classes */
-.h-100 {
-  height: 100%;
-}
 
 .section-blue {
   color: white;
   background-color: #3e92cc;
+  padding: 20px;
+  overflow: hidden;
+
 }
 
 .section-white {
   background-color: whitesmoke;
   color: black;
+  padding: 20px;
+  overflow: hidden;
+
 }
 
 nav {
@@ -44,15 +48,19 @@ nav {
 #landing-content {
   text-align: center;
 }
-#landing-content > a {
+
+#landing-content>a {
   border-radius: 12px;
   background-color: #083d77;
+  color: white;
 }
-#landing-content > a:hover {
+
+#landing-content>a:hover {
   transform: scale(1.1);
   transition: all ease 500ms;
   opacity: 0.9;
 }
+
 #changing-text::after {
   color: white;
   content: "";
@@ -63,17 +71,38 @@ nav {
   0% {
     content: "Developer.";
   }
+
   50% {
     content: "Coffee Addict.";
   }
+
   100% {
     content: "Bookworm.";
   }
 }
 
 #about-me-section {
-  height: 100%;
+
 }
+
+.br {
+  border: 2px solid red;
+}
+
+#headshot {
+  margin-left: auto;
+  display: block;
+  max-width: 60%;
+  height: auto;
+
+}
+
+@media (max-width: 1199.98px) { 
+  #headshot{
+    max-width: 40%;
+    margin: auto;
+  }
+ }
 
 #education-section {
   height: 70%;
@@ -82,6 +111,7 @@ nav {
 #experience-section {
   height: 100%;
 }
+
 #contact-section {
   height: 30%;
 }
