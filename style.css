@@ -25,6 +25,7 @@ nav {
   background-color: #ffffff;
 }
 
+
 #nav-title-text {
   font-family: "Zen Dots", cursive;
 }
@@ -105,9 +106,20 @@ nav {
  }
 
 #education-section {
-  height: 70%;
+  /* height: 70%; */
 }
 
+.education-card{
+    padding: 20px;
+    background-color: #083D77;
+    color:white;
+}
+
+.education-card:hover{
+    transform: scale(1.1);
+    transition: all ease 500ms;
+    box-shadow: rgb(8,61,119,.7) 0px 0px 0px 4px;
+}
 #experience-section {
   height: 100%;
 }
